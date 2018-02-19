@@ -50,6 +50,20 @@ define( [], function () {
 		show: function(data){return data.props.loadByTag;}
 	};
 
+	var group5Tag = {
+		ref: "props.groups.group5.tag",
+		label: "Associated Tag",
+		type: "string",
+		show: function(data){return data.props.loadByTag;}
+	};
+	
+	var group6Tag = {
+		ref: "props.groups.group5.tag",
+		label: "Associated Tag",
+		type: "string",
+		show: function(data){return data.props.loadByTag;}
+	};
+
 
 
 	var group1Label = {
@@ -76,6 +90,20 @@ define( [], function () {
 
 	var group4Label = {
 		ref: "props.groups.group4.label",
+		label: "Menu Heading",
+		type: "string",
+		show: function(data){return data.props.loadByTag;}
+	};
+	
+	var group5Label = {
+		ref: "props.groups.group5.label",
+		label: "Menu Heading",
+		type: "string",
+		show: function(data){return data.props.loadByTag;}
+	};
+	
+	var group6Label = {
+		ref: "props.groups.group6.label",
 		label: "Menu Heading",
 		type: "string",
 		show: function(data){return data.props.loadByTag;}
@@ -131,6 +159,24 @@ define( [], function () {
 				items: {
 					group4Tag:group4Tag,
 					group4Label:group4Label
+				}
+			},
+			
+			group5: {
+				type: "items",
+				label: "Group 5",
+				items: {
+					group5Tag:group5Tag,
+					group5Label:group5Label
+				}
+			},
+			
+			group6: {
+				type: "items",
+				label: "Group 6",
+				items: {
+					group6Tag:group6Tag,
+					group6Label:group6Label
 				}
 			}
 		}
